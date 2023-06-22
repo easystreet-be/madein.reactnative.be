@@ -1,24 +1,24 @@
 const appConfig = {
-    website: {
-        name: 'made in (flutter) Belgium',
-        gitRepo: {
-            website: 'https://github.com/flutter-belgium/made_in_flutter_belgium',
-            data: 'https://github.com/flutter-belgium/made_in_flutter_belgium_data',
-        },
-        privacyPolicy: 'https://madein.flutterbelgium.be/privacy-policy',
-        cookiePolicy: 'https://madein.flutterbelgium.be/cookie-policy',
+  website: {
+    name: 'Made In React Native Belgium',
+    gitRepo: {
+      website: 'https://github.com/easystreet-be/madein.reactnative.be',
+      data: 'https://github.com/easystreet-be/madein.reactnative.be_data',
     },
-    dev: {
-        website: "http://flutterbelgium.be/",
-        name: "Flutter Belgium",
-    },
-    env: {
-        basePath: process.env.basePath,
-        currentLocale: process.env.locale,
-    },
-    locales: {
-        en: 'https://madein.flutterbelgium.be/',
-    }
-}
+    privacyPolicy: 'https://madein.reactnative.be/privacy-policy',
+    cookiePolicy: 'https://madein.reactnative.be/cookie-policy',
+  },
+  dev: {
+    website: 'http://reactnative.be/',
+    name: 'reactnative.be',
+  },
+  env: {
+    basePath: process.env.basePath,
+    currentLocale: process.env.locale,
+  },
+  locales: {
+    en: 'https://madein.reactnative.be/',
+  },
+};
 
-export default appConfig
+export default appConfig;

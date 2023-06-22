@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
-import { useEffect } from "react"
+import { useEffect } from "react";
 
 const HomePage = () => {
   const { push } = useRouter();
 
   useEffect(() => {
-     push('/projects');
-  }, []);
+    push("/projects");
+  }, [push]);
   return <p></p>;
-}
+};
 
-export default HomePage
+export default HomePage;

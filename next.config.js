@@ -1,24 +1,20 @@
 /** @type {import('next').NextConfig} */
 
-const path = require('path')
+const path = require('path');
 
 const nextConfig = {
   reactStrictMode: false,
   env: {
     locale: 'nl',
-    basePath: '/flutter-belgium',
+    basePath: '/react-native',
   },
   images: {
     unoptimized: true,
-    domains: [
-      'api.madein.flutterbelgium.be',
-    ],
+    domains: ['api.madein.reactnative.be'],
   },
   sassOptions: {
-    includePaths: [
-      path.join(__dirname, 'styles'),
-    ],
+    includePaths: [path.join(__dirname, 'styles')],
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

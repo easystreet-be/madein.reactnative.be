@@ -14,5 +14,5 @@ node tool/generate_sitemap.js
 
 # ZIP
 cd out_full_export
-zip -r -X flutterbelgium.zip *
+zip -r -X reactnative.zip *
 open .

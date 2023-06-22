@@ -6,4 +6,4 @@ Disallow: /login
 User-agent: *
 Allow: /
 
-Sitemap: https://madein.flutterbelgium.be/sitemap
+Sitemap: https://madein.reactnative.be/sitemap

@@ -1,9 +1,11 @@
-# made in (Flutter) Belgium
+# made in React Native Belgium
 
-This repository is used to show the website for [madein.flutterbelgium.be](https://madein.flutterbelgium.be)
+This repository is used to show the website for [madein.reactnative.be](https://madein.reactnative.be)
 
 ## Data
 
-The data is used for this website is coming from [here](https://github.com/flutter-belgium/made_in_flutter_belgium_data)
+The data is used for this website is coming from [here](https://github.com/easystreet-be/madein.reactnative.be_data)
 
-Documentation can be found [here](https://github.com/flutter-belgium/made_in_flutter_belgium_data/tree/main/examples)
+## Thank you
+
+Big thanks to [https://github.com/flutter-belgium/made_in_flutter_belgium](https://github.com/flutter-belgium/made_in_flutter_belgium) for the inspiration for this website.
