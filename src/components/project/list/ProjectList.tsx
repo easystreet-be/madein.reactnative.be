@@ -1,7 +1,7 @@
-import style from '@/components/project/list/ProjectList.module.scss';
-import ProjectListItem from './item/ProjectListItem';
-import Link from 'next/link';
-import { translations } from '@/util/locale/localization';
+import style from "@/components/project/list/ProjectList.module.scss";
+import ProjectListItem from "./item/ProjectListItem";
+import Link from "next/link";
+import { translations } from "@/util/locale/localization";
 
 interface ProjectListProps {
   title?: string;
@@ -18,7 +18,7 @@ const ProjectList = (props: ProjectListProps) => {
         ))}
         <Link
           className={style.addProjectContainer}
-          href="https://github.com/easystreet-be/madein.reactnative.be_data/tree/main/examples/projects"
+          href="https://github.com/easystreet-be/madein.reactnative.be_data/wiki/projects"
           target="_blank"
           aria-label={translations.projects_add_project_btn}
         >

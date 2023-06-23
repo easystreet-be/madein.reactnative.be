@@ -1,7 +1,7 @@
-import style from '@/components/company/list/CompanyList.module.scss';
-import CompanyListItem from './item/CompanyListItem';
-import Link from 'next/link';
-import { translations } from '@/util/locale/localization';
+import style from "@/components/company/list/CompanyList.module.scss";
+import CompanyListItem from "./item/CompanyListItem";
+import Link from "next/link";
+import { translations } from "@/util/locale/localization";
 
 interface CompanyListProps {
   companies: Array<MinimizedCompany>;
@@ -15,7 +15,7 @@ const CompanyList = (props: CompanyListProps) => {
       ))}
       <Link
         className={style.addCompanyContainer}
-        href="https://github.com/easystreet-be/madein.reactnative.be/tree/main/examples/companies"
+        href="https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies"
         target="_blank"
         aria-label={translations.companies_add_company_btn}
       >

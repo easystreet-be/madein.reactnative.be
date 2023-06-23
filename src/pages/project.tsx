@@ -19,7 +19,7 @@ const ProjectDetailPage = () => {
 
   useEffect(() => {
     viewModel.init(router.query.name as string);
-  }, [router.query.name, viewModel]);
+  }, [router.query.name]);
 
   const project = viewModel.project;
   return (
