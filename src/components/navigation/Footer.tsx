@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import React from 'react';
-import appConfig from '@/config/appConfig';
-import style from '@/styles/components/navigation/Footer.module.scss';
-import { translations } from '@/util/locale/localization';
-import { openCookieConsent } from '@/util/cookie_consent/cookie_consent_config';
+import Link from "next/link";
+import React from "react";
+import appConfig from "@/config/appConfig";
+import style from "@/styles/components/navigation/Footer.module.scss";
+import { translations } from "@/util/locale/localization";
+// import { openCookieConsent } from "@/util/cookie_consent/cookie_consent_config";
 
 const Footer = () => {
   const currentLocale = appConfig.env.currentLocale;
@@ -20,7 +20,7 @@ const Footer = () => {
                 href={Object.values(locales)[index]}
                 locale={l}
                 className={`${style.languageBtn} ${
-                  l == currentLocale ? style.activeLocale : ''
+                  l == currentLocale ? style.activeLocale : ""
                 }`}
               >
                 {l}
@@ -29,13 +29,13 @@ const Footer = () => {
           : null}
       </p>
       <p>
-        {appConfig.website.name} {new Date().getFullYear()}.{' '}
-        {translations.powered_by}{' '}
+        {appConfig.website.name} {new Date().getFullYear()}.{" "}
+        {translations.powered_by}{" "}
         <a href="https://easystreet.be">Easy Street</a>
       </p>
 
       <div className={style.linkContainer}>
-        <button
+        {/* <button
           onClick={openCookieConsent}
           aria-label={translations.footer_cookie_btn_label}
         >
@@ -43,7 +43,7 @@ const Footer = () => {
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
-            fill="#000000"
+            fill="#fff"
             viewBox="0 0 256 256"
           >
             <path
@@ -52,7 +52,7 @@ const Footer = () => {
             ></path>
             <path d="M164.49,163.51a12,12,0,1,1-17,0A12,12,0,0,1,164.49,163.51Zm-81-8a12,12,0,1,0,17,0A12,12,0,0,0,83.51,155.51Zm9-39a12,12,0,1,0-17,0A12,12,0,0,0,92.49,116.49Zm48-1a12,12,0,1,0,0,17A12,12,0,0,0,140.49,115.51ZM232,128A104,104,0,1,1,128,24a8,8,0,0,1,8,8,40,40,0,0,0,40,40,8,8,0,0,1,8,8,40,40,0,0,0,40,40A8,8,0,0,1,232,128Zm-16.31,7.39A56.13,56.13,0,0,1,168.5,87.5a56.13,56.13,0,0,1-47.89-47.19,88,88,0,1,0,95.08,95.08Z"></path>
           </svg>
-        </button>
+        </button> */}
         <Link
           href="https://github.com/easystreet-be/madein.reactnative.be/issues/new"
           target="_blank"
@@ -62,7 +62,7 @@ const Footer = () => {
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
-            fill="#000000"
+            fill="#fff"
             viewBox="0 0 256 256"
           >
             <path d="M208,128v16a80,80,0,0,1-160,0V128Z" opacity="0.2"></path>

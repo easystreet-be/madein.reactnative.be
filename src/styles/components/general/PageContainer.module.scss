@@ -1,6 +1,9 @@
 .pageContainer {
-    padding: 5rem 2em 8rem 2rem;
+  padding: 10em 2em 8rem 2rem;
+  @media screen and (max-width: 768px) {
+    padding: 4em 2em 8rem 2rem;
+  }
 }
 .pageContainerNoVerticalPadding {
-    padding: 0 2em 0 2rem;
+  padding: 0 2em 0 2rem;
 }

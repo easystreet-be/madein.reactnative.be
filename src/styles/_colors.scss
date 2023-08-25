@@ -1,18 +1,18 @@
-$color-primary: black;
-$color-primary-light: #767676;
-$color-primary-ultra-light: #F2F2F2;
-$color-accent: #FF0F21;
+$color-primary: #fefefe;
+$color-primary-light: #fefefe;
+$color-primary-ultra-light: #f2f2f2;
+$color-accent: #ff0f21;
 $color-belgian-1: #333333;
-$color-belgian-2: #FFE936;
-$color-belgian-3: #FF0F21;
+$color-belgian-2: #ffe936;
+$color-belgian-3: #ff0f21;
 
 $color-accent-dark: rgba($color-accent, 0.88);
 $color-accent-light: rgba($color-accent, 0.5);
 $color-text: $color-primary;
 $color-text-secondary: $color-primary-light;
-$color-text-inverted: white;
-$color-text-hover: grey;
-$color-background: white;
+$color-text-inverted: #fefefe;
+$color-text-hover: #fff;
+$color-background: #fefefe;
 $color-background-secondary: #eaeaea;
 $color-background-card: #d8d8d8;
 $color-background-inverted: black;

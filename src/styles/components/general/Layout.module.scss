@@ -1,7 +1,20 @@
+.wrapper {
+  background: orange;
+  background-image: url("../../../../public/images/bg_xlarge.jpg");
+  background-size: 100%;
+  background-color: #201940;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    background-size: 160%;
+  }
+}
+
 .container {
-    min-height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }

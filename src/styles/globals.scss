@@ -1,104 +1,104 @@
-@import 'colors';
-@import 'mixins';
-@import 'utilities';
-@import 'text';
-@import 'cookie_consent';
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=optional');
+@import "colors";
+@import "mixins";
+@import "utilities";
+@import "text";
+@import "cookie_consent";
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=optional");
 
 /** RESET **/
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 #__next {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 html {
-    scroll-behavior: smooth;
-    white-space: pre-line;
+  scroll-behavior: smooth;
+  white-space: pre-line;
 }
 
 /** TEXT STYLES **/
 body {
-    margin: 0;
-    color: $color-text;
-    background-color: $color-background;
+  margin: 0;
+  color: $color-text;
+  background-color: $color-background;
 }
 
 h1 {
+  font-size: 45px;
+  margin: 0;
+  @include belowPhone {
+    font-size: 30px;
+  }
+  @include betweenPhoneAndTabletPortrait {
+    font-size: 37px;
+  }
+  @include betweenTabletPortraitAndSmallLaptop {
+    font-size: 40px;
+  }
+  @include belowLaptops {
     font-size: 45px;
-    margin: 0;
-    @include belowPhone {
-        font-size: 30px;
-    }
-    @include betweenPhoneAndTabletPortrait {
-        font-size: 37px;
-    }
-    @include betweenTabletPortraitAndSmallLaptop {
-        font-size: 40px;
-    }
-    @include belowLaptops {
-        font-size: 45px;
-    }
+  }
 }
 
 h2 {
+  font-size: 20px;
+  margin: 0 0 0.5em 0;
+  @include belowPhone {
+    font-size: 16px;
+  }
+  @include betweenPhoneAndTabletPortrait {
+    font-size: 18px;
+  }
+  @include betweenTabletPortraitAndSmallLaptop {
     font-size: 20px;
-    margin: 0 0 0.5em 0;
-    @include belowPhone {
-        font-size: 16px;
-    }
-    @include betweenPhoneAndTabletPortrait {
-        font-size: 18px;
-    }
-    @include betweenTabletPortraitAndSmallLaptop {
-        font-size: 20px;
-    }
+  }
 }
 
 h3 {
+  font-size: 22px;
+  @include belowPhone {
+    font-size: 18px;
+  }
+  @include betweenPhoneAndTabletPortrait {
+    font-size: 20px;
+  }
+  @include betweenTabletPortraitAndSmallLaptop {
     font-size: 22px;
-    @include belowPhone {
-        font-size: 18px;
-    }
-    @include betweenPhoneAndTabletPortrait {
-        font-size: 20px;
-    }
-    @include betweenTabletPortraitAndSmallLaptop {
-        font-size: 22px;
-    }
+  }
 }
 
 /** LINKS **/
 a,
 button {
-    color: $color-text;
+  color: $color-text;
 }
 
 a:hover,
 button:hover {
-    color: $color-text-hover;
+  color: $color-text-hover;
 }
 
 button {
-    border: none;
-    border-radius: $button-border-radius;
-    background: none;
-    cursor: pointer;
+  border: none;
+  border-radius: $button-border-radius;
+  background: none;
+  cursor: pointer;
 }
 
 .yarl__slide_description {
-    font-family: 'Poppins', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 textarea {
-    font-family: 'Poppins', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .seek-bounce {
-    color: $color-accent;
+  color: $color-accent;
 }
