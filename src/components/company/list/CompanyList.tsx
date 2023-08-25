@@ -15,7 +15,7 @@ const CompanyList = (props: CompanyListProps) => {
       ))}
       <Link
         className={style.addCompanyContainer}
-        href="https://github.com/easystreet-be/madein.reactnative.be_data/wiki/companies"
+        href="https://github.com/easystreet-be/reactnative.be_data/wiki/companies"
         target="_blank"
         aria-label={translations.companies_add_company_btn}
       >

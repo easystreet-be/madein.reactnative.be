@@ -56,7 +56,7 @@ const Header = () => {
             <Link href="/companies">Companies</Link>
             <div className={style.githubIcon}>
               <Link
-                href="https://github.com/easystreet-be/madein.reactnative.be_data"
+                href="https://github.com/easystreet-be/reactnative.be_data"
                 target="_blank"
                 aria-label={translations.header_github_btn_label}
               >

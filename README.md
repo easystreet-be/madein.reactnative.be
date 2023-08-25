@@ -1,10 +1,10 @@
 # made in React Native Belgium
 
-This repository is used to show the website for [madein.reactnative.be](https://madein.reactnative.be)
+This repository is used to show the website for [reactnative.be](https://reactnative.be)
 
 ## Data
 
-The data is used for this website is coming from [here](https://github.com/easystreet-be/madein.reactnative.be_data)
+The data is used for this website is coming from [here](https://github.com/easystreet-be/reactnative.be_data)
 
 ## Thank you
 

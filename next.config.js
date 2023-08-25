@@ -1,19 +1,19 @@
 /** @type {import('next').NextConfig} */
 
-const path = require('path');
+const path = require("path");
 
 const nextConfig = {
   reactStrictMode: false,
   env: {
-    locale: 'nl',
-    basePath: '/react-native',
+    locale: "nl",
+    basePath: "/react-native",
   },
   images: {
     unoptimized: true,
-    domains: ['api.madein.reactnative.be'],
+    domains: ["api.reactnative.be"],
   },
   sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
+    includePaths: [path.join(__dirname, "styles")],
   },
 };
 

@@ -54,7 +54,7 @@ const Footer = () => {
           </svg>
         </button> */}
         <Link
-          href="https://github.com/easystreet-be/madein.reactnative.be/issues/new"
+          href="https://github.com/easystreet-be/reactnative.be/issues/new"
           target="_blank"
           aria-label={translations.footer_bug_btn_label}
         >
