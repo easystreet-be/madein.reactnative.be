@@ -4,7 +4,7 @@ import { IBM_Plex_Sans } from "next/font/google";
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { withTranslations } from "@/util/locale/localization";
-import configureCookieConsent from "@/util/cookie_consent/cookie_consent_config";
+// import configureCookieConsent from "@/util/cookie_consent/cookie_consent_config";
 import React from "react";
 import { configureApi } from "@/service/api_service";
 import { useRouter } from "next/router";
@@ -25,7 +25,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       const hostname = window.location.hostname;
       if (hostname == "localhost") return;
     }
-    configureCookieConsent();
+    // configureCookieConsent();
   }, []);
 
   return (
