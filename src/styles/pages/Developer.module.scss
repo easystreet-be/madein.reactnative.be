@@ -1,67 +1,67 @@
-@import '@/styles/colors';
-@import '@/styles/mixins';
+@import "@/styles/colors";
+@import "@/styles/mixins";
 
 .container {
+  display: flex;
+  gap: 3em;
+
+  .titleContainer {
     display: flex;
-    gap: 3em;
+    align-items: center;
+    gap: 2em;
 
-    .titleContainer {
-        display: flex;
-        align-items: center;
-        gap: 2em;
+    .profilePictureImage {
+      width: auto;
+      max-height: 64px;
+      border-radius: 100%;
+    }
+  }
 
-        .profilePictureImage {
-            width: auto;
-            max-height: 64px;
-            border-radius: 100%;
-        }
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 5;
+
+    p {
+      font-size: 16px;
+      color: $color-primary;
     }
 
-    .infoContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        flex: 5;
-
-        p {
-            font-size: 16px;
-            color: $color-primary-light;
-        }
-
-        .description {
-            margin-bottom: 2em;
-        }
-
-        .websiteContainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1em;
-        }
+    .description {
+      margin-bottom: 2em;
     }
 
-    .phoneProjectListContainer {
-        display: none;
+    .websiteContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+  }
 
-        margin: 3em 0;
+  .phoneProjectListContainer {
+    display: none;
 
-        @include belowPhone {
-            display: block;
-        }
+    margin: 3em 0;
 
-        @include betweenPhoneAndTabletPortrait {
-            display: block;
-        }
+    @include belowPhone {
+      display: block;
     }
 
-    .projectListContainer {
-        flex: 6;
-
-        @include belowPhone {
-            display: none;
-        }
-
-        @include betweenPhoneAndTabletPortrait {
-            display: none;
-        }
+    @include betweenPhoneAndTabletPortrait {
+      display: block;
     }
+  }
+
+  .projectListContainer {
+    flex: 6;
+
+    @include belowPhone {
+      display: none;
+    }
+
+    @include betweenPhoneAndTabletPortrait {
+      display: none;
+    }
+  }
 }

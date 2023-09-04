@@ -1,38 +1,38 @@
-@import '../../colors';
+@import "../../colors";
 
 .container {
-    color: $color-text-secondary;
-    max-width: 1200px;
+  color: $color-text;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 2em;
+
+  p {
+    text-align: center;
+  }
+
+  p:first-child {
+    margin: 0.5em;
+  }
+
+  p:last-child {
+    padding-bottom: 2em;
+  }
+
+  .languageBtn {
+    cursor: pointer;
+    margin: 0 0.2em;
+    padding: 1em 1.5em;
+  }
+
+  .activeLocale {
+    color: $color-accent;
+  }
+
+  .linkContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0.5rem 2em;
-
-    p {
-        text-align: center;
-    }
-
-    p:first-child {
-        margin: 0.5em;
-    }
-
-    p:last-child {
-        padding-bottom: 2em;
-    }
-
-    .languageBtn {
-        cursor: pointer;
-        margin: 0 0.2em;
-        padding: 1em 1.5em;
-    }
-
-    .activeLocale {
-        color: $color-accent;
-    }
-
-    .linkContainer {
-        display: flex;
-        gap: 1em;
-    }
+    gap: 1em;
+  }
 }

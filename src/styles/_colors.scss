@@ -1,7 +1,6 @@
 $color-primary: #fefefe;
-$color-primary-light: #fefefe;
-$color-primary-ultra-light: #f2f2f2;
-$color-accent: #ff0f21;
+$color-accent: #201940;
+
 $color-belgian-1: #333333;
 $color-belgian-2: #ffe936;
 $color-belgian-3: #ff0f21;
@@ -9,7 +8,7 @@ $color-belgian-3: #ff0f21;
 $color-accent-dark: rgba($color-accent, 0.88);
 $color-accent-light: rgba($color-accent, 0.5);
 $color-text: $color-primary;
-$color-text-secondary: $color-primary-light;
+$color-text-secondary: $color-accent;
 $color-text-inverted: #fefefe;
 $color-text-hover: #fff;
 $color-background: #fefefe;

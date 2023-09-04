@@ -17,8 +17,8 @@ const ProjectList = (props: ProjectListProps) => {
           <ProjectListItem key={index} project={project} />
         ))}
         <Link
-          className={style.addProjectContainer}
           href="https://github.com/easystreet-be/reactnative.be_data/wiki/projects"
+          className={style.addProjectContainer}
           target="_blank"
           aria-label={translations.projects_add_project_btn}
         >

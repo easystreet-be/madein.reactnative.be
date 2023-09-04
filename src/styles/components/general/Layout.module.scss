@@ -1,8 +1,9 @@
+@import "../../colors";
+
 .wrapper {
-  background: orange;
   background-image: url("../../../../public/images/bg_xlarge.jpg");
   background-size: 100%;
-  background-color: #201940;
+  background-color: $color-accent;
   background-repeat: no-repeat;
   min-height: 100vh;
 

@@ -1,84 +1,84 @@
-@import '@/styles/colors';
-@import '@/styles/mixins';
+@import "@/styles/colors";
+@import "@/styles/mixins";
 
 .container {
+  display: flex;
+  gap: 3em;
+
+  .titleContainer {
     display: flex;
-    gap: 3em;
+    align-items: center;
+    gap: 1em;
 
-    .titleContainer {
-        display: flex;
-        align-items: center;
-        gap: 1em;
+    img {
+      border-radius: 16%;
+      max-width: 48px;
+      width: auto;
+      height: auto;
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
 
-        img {
-            border-radius: 16%;
-            max-width: 48px;
-            width: auto;
-            height: auto;
-            box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
-        }
+  .infoContainer {
+    flex: 5;
+
+    p {
+      font-size: 16px;
+      color: $color-primary;
     }
 
-    .infoContainer {
-        flex: 5;
+    .storeContainer {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin: 2em 0;
 
-        p {
-            font-size: 16px;
-            color: $color-primary-light;
-        }
+      img {
+        max-width: 100%;
+      }
 
-        .storeContainer {
-            display: flex;
-            align-items: center;
-            gap: 1em;
-            margin: 2em 0;
+      .appStore {
+        width: 210px;
+        height: auto;
+      }
 
-            img {
-                max-width: 100%;
-            }
+      .playStore {
+        width: 220px;
+        height: auto;
+      }
+    }
+  }
 
-            .appStore {
-                width: 210px;
-                height: auto;
-            }
+  .phoneScreenshotContainer {
+    display: none;
+    margin: 3em 0;
 
-            .playStore {
-                width: 220px;
-                height: auto;
-            }
-        }
+    @include belowPhone {
+      display: block;
     }
 
-    .phoneScreenshotContainer {
-        display: none;
-        margin: 3em 0;
-
-        @include belowPhone {
-            display: block;
-        }
-
-        @include betweenPhoneAndTabletPortrait {
-            display: block;
-        }
-
-        @include betweenTabletPortraitAndSmallLaptop {
-            display: block;
-        }
+    @include betweenPhoneAndTabletPortrait {
+      display: block;
     }
 
-    .screenshotContainer {
-        flex: 6;
-
-        @include belowPhone {
-            display: none;
-        }
-
-        @include betweenPhoneAndTabletPortrait {
-            display: none;
-        }
-
-        @include betweenTabletPortraitAndSmallLaptop {
-            display: none;
-        }
+    @include betweenTabletPortraitAndSmallLaptop {
+      display: block;
     }
+  }
+
+  .screenshotContainer {
+    flex: 6;
+
+    @include belowPhone {
+      display: none;
+    }
+
+    @include betweenPhoneAndTabletPortrait {
+      display: none;
+    }
+
+    @include betweenTabletPortraitAndSmallLaptop {
+      display: none;
+    }
+  }
 }

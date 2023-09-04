@@ -1,42 +1,46 @@
-@import '@/styles/colors';
-
+@import "@/styles/colors";
 
 .container {
-    .largeContainer {
-        img {
-            border-radius: 0;
-            max-height: 64px;
-        }
-    }
-
-
-    .largeCircleContainer {
-        img {
-            border-radius: 0;
-            max-height: 64px;
-        }
-    }
-
-    .smallCircleContainer {
-        img {
-            border-radius: 9999999em;
-            max-height: 48px;
-            height: 48px;
-            width: 48px;
-        }
-    }
-
-    .largeCircleContainer {
-        img {
-            border-radius: 9999999em;
-            max-height: 72px;
-            height: 72px;
-            width: 72px;
-        }
-    }
-
+  .largeContainer {
     img {
-        object-fit: contain;
-        width: auto;
+      border-radius: 0;
+      max-height: 64px;
     }
+  }
+
+  .largeCircleContainer {
+    img {
+      border-radius: 0;
+      max-height: 64px;
+      padding: 8px;
+      background-color: rgba(255, 255, 255, 0.03);
+      transition: ease-in-out 0.15s;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.38);
+      }
+    }
+  }
+
+  .smallCircleContainer {
+    img {
+      border-radius: 9999999em;
+      max-height: 48px;
+      height: 48px;
+      width: 48px;
+    }
+  }
+
+  .largeCircleContainer {
+    img {
+      border-radius: 9999999em;
+      max-height: 72px;
+      height: 72px;
+      width: 72px;
+    }
+  }
+
+  img {
+    object-fit: contain;
+    width: auto;
+  }
 }

@@ -1,79 +1,81 @@
-@import '@/styles/colors';
-@import '@/styles/mixins';
+@import "@/styles/colors";
+@import "@/styles/mixins";
 
 .container {
+  display: flex;
+  gap: 2em;
+
+  .titleContainer {
     display: flex;
-    gap: 3em;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
 
-    .titleContainer {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-
-        .titleImage {
-            width: auto;
-            max-height: 64px;
-        }
-
-        titleText {
-            width: auto;
-            max-height: 48px;
-        }
+    .titleImage {
+      width: auto;
+      max-height: 64px;
     }
 
-    .infoContainer {
-        flex: 5;
+    titleText {
+      width: auto;
+      max-height: 48px;
+    }
+  }
 
-        p {
-            font-size: 16px;
-            color: $color-primary-light;
-        }
+  .infoContainer {
+    flex: 2;
 
-        .description {
-            margin-bottom: 2em;
-        }
-
-        .agencyDecsription {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5em;
-
-            svg {
-                width: 24px;
-                height: 24px;
-            }
-        }
-
-        .linksContainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1em;
-        }
+    p {
+      font-size: 16px;
+      color: $color-primary;
     }
 
-    .phoneProjectListContainer {
-        display: none;
-
-        margin: 3em 0;
-
-        @include belowPhone {
-            display: block;
-        }
-
-        @include betweenPhoneAndTabletPortrait {
-            display: block;
-        }
+    .description {
+      margin-bottom: 2em;
     }
 
-    .projectListContainer {
-        flex: 6;
+    .agencyDescription {
+      margin-bottom: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
 
-        @include belowPhone {
-            display: none;
-        }
-
-        @include betweenPhoneAndTabletPortrait {
-            display: none;
-        }
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
+
+    .linksContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+  }
+
+  .phoneProjectListContainer {
+    display: none;
+
+    margin: 3em 0;
+
+    @include belowPhone {
+      display: block;
+    }
+
+    @include betweenPhoneAndTabletPortrait {
+      display: block;
+    }
+  }
+
+  .projectListContainer {
+    flex: 3;
+
+    @include belowPhone {
+      display: none;
+    }
+
+    @include betweenPhoneAndTabletPortrait {
+      display: none;
+    }
+  }
 }

@@ -1,19 +1,24 @@
-@import '@/styles/colors';
-@import '@/styles/mixins';
+@import "@/styles/colors";
+@import "@/styles/mixins";
 
 .btn {
-    gap: 1rem;
-    padding: 1em 2em;
-    text-decoration: none;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: 800;
-    text-transform: capitalize;
-    background-color: $color-primary;
-    color: $color-text-inverted;
-    cursor: pointer;
+  gap: 1rem;
+  padding: 1em 2em;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 800;
+  text-transform: capitalize;
+  background-color: $color-primary;
+  color: $color-accent;
+  cursor: pointer;
 
-    p {
-        margin: 0;
-    }
+  &:hover {
+    background-color: $color-background-secondary;
+    color: $color-accent;
+  }
+
+  p {
+    margin: 0;
+  }
 }
