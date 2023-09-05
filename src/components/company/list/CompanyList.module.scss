@@ -22,7 +22,8 @@
 
   .addCompanyContainer {
     width: 256px;
-    height: 84px;
+    min-height: 84px;
+    height: 100%;
     margin-bottom: 8px;
     border: 5px dashed rgba(255, 255, 255, 0.03);
     transition: ease-in-out 0.15s;
