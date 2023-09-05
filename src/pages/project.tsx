@@ -21,6 +21,8 @@ const ProjectDetailPage = () => {
     viewModel.init(router.query.name as string);
   }, [router.query.name]);
 
+  const hasDevTeamMembers =
+    viewModel.devTeamLinks.filter((devTeam) => devTeam.title).length > 0;
   const project = viewModel.project;
   return (
     <>
@@ -79,11 +81,13 @@ const ProjectDetailPage = () => {
                 iconType={IconType.large}
                 links={viewModel.publisherLinks}
               />
-              <LinkSection
-                title={translations.project_detail_dev_team_title}
-                iconType={IconType.smallCircle}
-                links={viewModel.devTeamLinks}
-              />
+              {hasDevTeamMembers && (
+                <LinkSection
+                  title={translations.project_detail_dev_team_title}
+                  iconType={IconType.smallCircle}
+                  links={viewModel.devTeamLinks}
+                />
+              )}
               <LinkSection
                 title={translations.project_detail_involved_companies_title}
                 iconType={IconType.largeCircle}
