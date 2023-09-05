@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     gap: 1em;
+    margin-bottom: 1em;
 
     img {
       border-radius: 16%;
@@ -35,6 +36,8 @@
 
       img {
         max-width: 100%;
+        height: auto;
+        object-fit: contain;
       }
 
       .appStore {
